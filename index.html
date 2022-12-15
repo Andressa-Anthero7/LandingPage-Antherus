@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Antherus</title>
+
+
+	<!-- Jquery CDN -->
+	 <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	
+	<!-- Boostrap 4 CDN  -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+	<!-- FontAwesome CDN -->
+	<script src="https://kit.fontawesome.com/a69cec9c91.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="fontawesome/css/all.css">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+
+
+	<!-- CSS -->
+	 <link rel="stylesheet" type="text/css" href="estilo-landing-page.css">
+	 
+	
+	<!-- Java Script -->
+	 <link rel="stylesheet" type="text/javascript" href="estilo-landing-page.js">
+	
+
+</head>
+
+<!-- Corpo do HTML -->
+<body>
+	<header>
+			
+		<div id="logo">
+			<img src="logo-2.png">
+		</div>
+			
+	</header>
+	<div class="container-fluid">
+		<div id="texto-lateral">
+			
+		</div>
+		<div id="form">
+
+			<!-- Formulario -->
+			<form enctype="multipart/form-data" method="POST" id="formulario">
+				<h3 id="header-form">Preencha o Formulário</h3>
+				<p id="texto-auxiliar-header">Para receber uma consultoria em marketing digital totalmente grátis.</p>
+
+				<!-- Campos do Formulário -->
+				<div id="campos-formulario">
+					<!-- Campo Nome -->
+					<div>
+						<label for="nome">Seu Nome</label>
+						<input class="form-control field-form" id="nome">
+						<br>
+					</div>
+					<!-- Campo E-mail -->
+					<div>
+						<label for="email">Seu Melhor E-mail</label>
+						<input class="form-control field-form" id="email">
+						<br>
+					</div>
+					<!-- Campo What´s App -->
+					<div>
+						<label for="whatsapp">What´s App</label>
+						<input class="form-control field-form" id="whatsapp">
+						<br>
+					</div>
+				</div>
+				<!-- BTN DO FORMULÁRIO -->
+				<div>
+					<input type="checkbox" name="aceita-envio" id="aceita-envio">
+					<span id="texto-checkbox">Aceito o contato de um consultor gratuitamente.</span>
+					<input type="submit" id="enviar-formulario" name="enviar-formulario" class="btn btn-warning">
+					
+				</div>
+			</form>
+
+			<!--  Enceerrameto do Formulario -->
+
+
+		</div>
+		<!--Fechamento do form -->
+		
+	</div>
+
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
