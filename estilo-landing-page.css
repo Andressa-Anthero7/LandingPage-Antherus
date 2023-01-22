@@ -638,7 +638,7 @@ body{
 	}
 
 	#head-line{
-		max-width:50vh;
+		min-width:50vh;
 		
 		bold:800;
 		border:1px solid white;
