@@ -618,7 +618,7 @@ body{
 
 	.container-fluid{
 		 
-		 width: 60vh;
+		 width: 400px;
 
 	}
 
@@ -630,7 +630,7 @@ body{
 	}
 
 	#img-logo{
-		max-width:40vh;
+		max-width:300px;
 		position: relative;
 		left:4em;
 		
@@ -670,7 +670,7 @@ body{
 		margin:1em 0.5em 0.5em 0.5em;
 		position: relative;
 		top:-1em;
-		left:-1em;
+		left:-1.5em;
 		/* From https://css.glass */
 		background: rgba(17, 15, 15, 0.28);
 		border-radius: 16px;
@@ -679,7 +679,7 @@ body{
 		-webkit-backdrop-filter: blur(5px);
 		border:1px solid white;
 		min-height: 450px;
-		max-width: 400px;
+		min-width: 400px;
 
 	}
 
@@ -827,22 +827,22 @@ body{
 	#video{
 		
 		position: relative;
-		left:-0.2em;
+		left:-0.7em;
 		top:1em;
 	}
 
 	iframe{
 		height: 12em;
 		border-radius:5px;
-		min-width: 390px;
+		min-width: 395px;
 		min-height: 350px;
 	}
 
 
 	#texto-auxiliar{
-		min-width:90vh;
+		min-width:310px;
 		position: relative;
-		left:-0.8em;
+		left:-1em;
 		top:25em;
 		font-weight: 600;
 	}
