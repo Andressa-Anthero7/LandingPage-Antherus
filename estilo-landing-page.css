@@ -604,8 +604,8 @@ body{
 		 text-shadow: 0.1em 0.1em 0.2em black;
 		 
 		 background: rgb(71,23,246);
-		background: radial-gradient(circle, rgba(71,23,246,0.9560866582961309) 0%, rgba(30,85,147,1) 150%);
-
+		background: linear-gradient(360deg, rgba(71,23,246,0.9560866582961309) 0%, rgba(0,0,0,1) 95%);
+		background-repeat: no-repeat;
 		height: 700px;
 		
 
@@ -640,6 +640,8 @@ body{
 	#head-line{
 		max-width:53vh;
 		font-size:1em;
+		bold:800;
+		border:1px solid white;
 
 	}
 
@@ -647,6 +649,7 @@ body{
 		position: relative;
 		top:0.5em;
 		left:0em;
+		white-space: pre-wrap;
 	}
 
 	.texto-head-line{
