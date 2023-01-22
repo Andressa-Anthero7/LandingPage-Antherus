@@ -600,8 +600,8 @@ body{
 		 
 		 overflow-x: hidden;
 		  font-family:Noto Sans, sans-serif;
-		 color:white;
-		 
+		 color:#ffd700;
+		 text-shadow: 0.1em 0.1em 0.2em black;
 		 
 		 background: rgb(71,23,246);
 		background: radial-gradient(circle, rgba(71,23,246,0.9560866582961309) 0%, rgba(30,85,147,1) 150%);
@@ -661,10 +661,19 @@ body{
 	}
 
 	#div-formulario{
-		margin-top:1em;
-
+		margin:1em 0.5em 0.5em 0.5em;
 		position: relative;
 		top:-1em;
+		left:-1em;
+		/* From https://css.glass */
+		background: rgba(17, 15, 15, 0.28);
+		border-radius: 16px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+		border:1px solid white;
+		max-height: 450px;
+
 	}
 
 	#header-formulario{
@@ -724,14 +733,14 @@ body{
 	#campo-formulario-nome{
 		position: relative;
 		top:1em;
-		left:0.5em;
+		left:1em;
 
 	}
 
 	#campo-formulario-email{
 		position: relative;
 		top:-1.6em;
-		left:0.5em;
+		left:1em;
 		
 
 	}
@@ -739,26 +748,28 @@ body{
 	#campo-formulario-whatsapp{
 		position: relative;
 		top:-5em;
-		left:0.5em;
+		left:1em;
 		
 	}
 
 	#campo-formulario-aceita-termos{
 		position: relative;
-		top:-9em;
-		left:0.5em;
+		top:-7em;
+		left:1.5em;
 		
 	}
 
 	#btn-enviar{
 		position: relative;
-		left:0.5em;
-		top:-11em;
+		left:2em;
+		top:-6em;
+		
 
 	}
 
 	#enviar{
 		color:gray;
+		align-self: center;
 	}
 
 	
@@ -774,11 +785,16 @@ body{
 
 	#text-aceita-termos{
 		position: relative;
-		top:-1.6em;
-		left:0.8em;
+		top:0em;
+		left:0em;
 		
 
 		
+	}
+
+	#aceita-termos{
+		position: relative;
+		left:0em;
 	}
 
 	
@@ -805,7 +821,7 @@ body{
 		
 		position: relative;
 		left:-0.2em;
-		top:-12em;
+		top:1em;
 	}
 
 	iframe{
@@ -820,7 +836,7 @@ body{
 		min-width:90vh;
 		position: relative;
 		left:-0.8em;
-		top:12em;
+		top:25em;
 		font-weight: 600;
 	}
 
@@ -844,15 +860,16 @@ body{
 	.item-lista-beneficios{
 		margin:0.5em;
 		font-size: 1.5em;
-
 		position: relative;
 		left: 0.2em;
+		 text-shadow:none;
 	}
 
 	#texto-chamada-final{
 		position: relative;
 		left:1em;
 		font-size: 1.5em;
+		 text-shadow: 0.1em 0.1em 0.5em black;
 	}
 
 
@@ -865,7 +882,7 @@ body{
 
 	#btn-retorno-formulario{
 		position: relative;
-		top:-10em;
+		top:6em;
 		left: 4.5em;
 	}
 
@@ -877,8 +894,8 @@ body{
 
 	footer{
 		position: relative;
-		left:-1em;
-		top:0;
+		left:-2em;
+		top:10em;
 		text-align: center;
 		color:white;
 	}

@@ -38,6 +38,7 @@
 			/*Texto BTN ENVIAR */
 
 			$('#enviar').val('Aceite o termo acima para enviar');
+			$('#enviar').css({'color':'gray','width':'340px'});
 
 
 
@@ -222,11 +223,11 @@
 		  		if(checkTermos.checked){
 		  			$('#enviar').val('Enviar');
 		  			$('#enviar').removeAttr('disabled');
-		  			$('#enviar').css({'color':'black'});
+		  			$('#enviar').css({'color':'black','width':'340px'});
 		  		}else{
 		  			$('#enviar').val('Aceite o termo acima para enviar');
 		  			$('#enviar').attr('disabled','disabled');
-		  			$('#enviar').css({'color':'gray'});
+		  			$('#enviar').css({'color':'gray','width':'340px'});
 		  		}
 		  	});
 
@@ -311,7 +312,7 @@
 
 				<!-- CAMPO BTN ENVIAR -->
 				<div id="btn-enviar" class="form-group" >
-					<input type="submit" name="enviar" id="enviar" class="btn-lg btn-warning col-11" disabled>
+					<input type="submit" name="enviar" id="enviar" class="btn-lg btn-warning " disabled>
 					
 					<br>
 				</div>
