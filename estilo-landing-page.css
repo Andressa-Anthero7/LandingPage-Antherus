@@ -873,12 +873,14 @@ body{
 	}
 
 	#texto-chamada-final{
-		position: relative;
-		left:1em;
-		font-size: 1.5em;
+		
+		font-size: 1.3em;
 		 text-shadow: 0.1em 0.1em 0.5em black;
 		 border:1px solid red;
-		 max-width: 300px;
+		 max-width: 350px;
+		 white-space: normal;
+		 bold:900;
+		 text-shadow:none ;
 	}
 
 
