@@ -877,6 +877,8 @@ body{
 		left:1em;
 		font-size: 1.5em;
 		 text-shadow: 0.1em 0.1em 0.5em black;
+		 border:1px solid red;
+		 max-width: 300px;
 	}
 
 
