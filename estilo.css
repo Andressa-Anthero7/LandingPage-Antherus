@@ -1,0 +1,256 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
+
+
+
+@media(max-width:320.98px){
+
+
+body{
+		background: rgb(71,23,246);
+		background: linear-gradient(360deg, rgba(71,23,246,0.9560866582961309) 0%, rgba(0,0,0,1) 95%);
+		background-repeat: no-repeat;
+		height: 800px;
+		width: 230px;
+		
+		 font-family: cursive;
+		 text-shadow: 0.1em 0.1em 0.2em black;
+		 
+		
+		
+}
+html{
+	 overflow-x: hidden;
+}
+
+
+
+
+.container-fluid{
+		
+		
+		width: 60vh;
+	}
+
+	#img-logo{
+		margin: 0;
+		padding: 0;
+		border:1px solid white;
+		position: relative;
+		left:0em;
+		max-width: 200px;
+	}
+
+	#head-line{
+		border:1px solid white;
+		width:320px;
+		position: relative;
+		left:-1em;
+		max-width: 230px;
+
+	}
+
+	#header-head-line{
+		 color:#ffd700;
+		 font-size:0.8em;
+		 position: relative;
+		 left:-3.5em;
+		 width:320px;
+
+	}
+
+	.texto-head-line{
+		color: white;
+		font-size:0.9em;
+	}
+
+	#div-formulario{
+		color:#ffd700;
+		border:1px solid white;
+		width:320px;
+		padding:0.5em;
+		max-width: 230px;
+	}
+
+	.campo-formulario{
+		position: relative;
+		top:0;
+	}
+
+	.check-ok{
+		position: relative;
+		left:11.5em;
+		top:-2.1em;
+		color:green;
+		
+	}
+
+	.fa-check{
+		font-size:1.5em;
+	}
+
+}
+
+
+@media(min-width:375.97px) and (max-width:414px){
+	
+
+body{
+		background: rgb(71,23,246);
+		background: linear-gradient(360deg, rgba(71,23,246,0.9560866582961309) 0%, rgba(0,0,0,1) 95%);
+		background-repeat: no-repeat;
+		height: 800px;
+		
+		overflow-x: hidden;
+		 font-family: cursive;
+		 text-shadow: 0.1em 0.1em 0.2em black;
+		 padding: 0;
+		
+		 
+		
+		
+}
+
+html{
+	overflow-x: hidden;
+}
+
+
+
+
+
+.container-fluid{
+		
+		
+		
+	}
+
+	#img-logo{
+		margin: 0;
+		padding: 0;
+		border:1px solid white;
+		position: relative;
+		left:0em;
+		max-width: 280px;
+	}
+
+	#head-line{
+		
+		width:320px;
+		position: relative;
+		left:0em;
+		top:1em;
+		max-width: 280px;
+
+	}
+
+	#header-head-line{
+		 color:#ffd700;
+		 font-size:1.05em;
+		 position: relative;
+		 left:-1em;
+		 width:320px;
+
+	}
+
+	.texto-head-line{
+		color: white;
+		font-size:1.1em;
+	}
+
+	#efeito-luz{
+		
+		max-width: 240px;
+		position: relative;
+		top:1em;
+		left:2.5em;
+	}
+
+	#div-formulario{
+		color:#ffd700;
+		
+		padding:0.5em;
+		max-width: 280px;
+		max-height:420px;
+		position: relative;
+		left:1em;
+		/* From https://css.glass */
+		background: rgba(17, 15, 15, 0.28);
+		border-radius: 16px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(5px);
+		-webkit-backdrop-filter: blur(5px);
+		border:1px solid white;
+	}
+
+	.campo-formulario{
+		position: relative;
+		top:0;
+	}
+
+	.check-ok{
+		position: relative;
+		left:14.5em;
+		top:-2.7em;
+		color:green;
+		
+	}
+
+	.fa-check{
+		font-size:1.5em;
+	}
+
+	.form-control{
+		position: relative;
+		top:-0.7em;
+	}
+
+	#campo-formulario-nome{
+		position: relative;
+		top:1em;
+
+	}
+
+	#campo-formulario-email{
+		position: relative;
+		top:-1.6em;
+
+	}
+
+	#campo-formulario-whatsapp{
+		position: relative;
+		top:-4em;
+	}
+
+	#campo-formulario-aceita-termos{
+		position: relative;
+		top:-6em;
+	}
+
+	#text-aceita-termos{
+		font-size: 0.7em;
+		border:1px solid red;
+		margin-left:1.2em;
+		position:relative;
+		top:-2.2em;
+	}
+
+	#btn-enviar{
+		position: relative;
+		left:0.5em;
+		top:-8em;
+
+	}
+
+
+
+
+}
+
