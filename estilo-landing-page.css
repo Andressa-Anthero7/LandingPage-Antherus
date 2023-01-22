@@ -638,10 +638,12 @@ body{
 	}
 
 	#head-line{
-		max-width:53vh;
+		max-width:50vh;
 		font-size:1em;
 		bold:800;
 		border:1px solid white;
+		position: relative;
+		left: 0.5em;
 
 	}
 
@@ -676,6 +678,7 @@ body{
 		-webkit-backdrop-filter: blur(5px);
 		border:1px solid white;
 		max-height: 450px;
+		max-width: 400px;
 
 	}
 
