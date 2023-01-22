@@ -641,7 +641,7 @@ body{
 		max-width: 380px;
 		
 		bold:800;
-		border:1px solid white;
+		/*border:1px solid white;*/
 		position: relative;
 		left: 0em;
 
@@ -657,9 +657,9 @@ body{
 
 	.texto-head-line{
 		padding-top: 1em;
-		min-width:55vh;
+		
 		position: relative;
-		left:-0.5em;
+		left:0em;
 		top:-0.5em;
 		font-size: 1.5em;
 		
@@ -840,9 +840,9 @@ body{
 
 
 	#texto-auxiliar{
-		min-width:310px;
+		
 		position: relative;
-		left:-1em;
+		left:-1.5em;
 		top:25em;
 		font-weight: 600;
 	}
@@ -852,13 +852,14 @@ body{
 		top:0em;
 		color: #0E0816;
 		margin:0.5em;
+		font-size: 1.5em;
 	}
 
 	#lista-beneficios{
-		max-width:51vh;
+		min-width:389px;
 		position: relative;
 		top:-23em;
-		left:1em;
+		left:0.9em;
 		border:1px solid red;
 		list-style: none;
 		background: yellow;
@@ -867,20 +868,22 @@ body{
 	.item-lista-beneficios{
 		margin:0.5em;
 		font-size: 1.5em;
+		text-shadow:none;
+		align-self: center;
 		position: relative;
-		left: 0.2em;
-		 text-shadow:none;
+		left:0.5em;
 	}
 
 	#texto-chamada-final{
 		
 		font-size: 1.3em;
 		 text-shadow: 0.1em 0.1em 0.5em black;
-		 border:1px solid red;
+		 /*border:1px solid red;*/
 		 max-width: 350px;
 		 white-space: normal;
 		 bold:900;
 		 text-shadow:none ;
+		 align-self: center;
 	}
 
 
@@ -899,14 +902,16 @@ body{
 
 	#retorno-formulario{
 		text-decoration: none;
+		align-self: center;
+	
 	}
 
 	
 
 	footer{
 		position: relative;
-		left:-2em;
-		top:10em;
+		left:0em;
+		top:15em;
 		text-align: center;
 		color:white;
 	}
