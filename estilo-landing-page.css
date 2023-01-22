@@ -639,7 +639,7 @@ body{
 
 	#head-line{
 		max-width:50vh;
-		font-size:1em;
+		
 		bold:800;
 		border:1px solid white;
 		position: relative;
@@ -651,7 +651,8 @@ body{
 		position: relative;
 		top:0.5em;
 		left:0em;
-		white-space: pre-wrap;
+		white-space: nowrap;
+		font-size:1.3em;
 	}
 
 	.texto-head-line{
@@ -677,7 +678,7 @@ body{
 		backdrop-filter: blur(5px);
 		-webkit-backdrop-filter: blur(5px);
 		border:1px solid white;
-		max-height: 450px;
+		min-height: 450px;
 		max-width: 400px;
 
 	}
