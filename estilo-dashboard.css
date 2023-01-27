@@ -1,0 +1,1304 @@
+*{
+	 margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+/* Celular Pequeno */
+@media(max-width: 320.98px){
+    body{
+        
+      
+        margin: 0 ;
+        padding: 0;
+         
+         overflow-x: hidden;
+          font-family:Noto Sans, sans-serif;
+         color:#ffd700;
+         text-shadow: 0.1em 0.1em 0.2em black;
+        height: 700px;
+        background: lavender;
+        
+
+    }
+
+    html{
+         overflow-x: hidden;
+
+    }
+
+    .container-fluid{
+         
+         width: 320px;
+
+
+    }
+
+    #header{
+        width:410px;
+        background: #0E0816; 
+        position: relative;
+        left:-1em;
+    }
+
+    #img-logo{
+        max-width:230px;
+        position: relative;
+        left:0.1em;
+        /*border:1px solid white;*/
+        
+
+    }
+
+    #menu-hamburguer{
+        font-size: 3.1em;
+        position: relative;
+        left:0.4em;
+        top:0.2em;
+    }
+
+    #header-dashboard{
+        
+         /*border:1px solid red;*/
+         min-width: 320px;
+         max-height: 7em;
+         padding: 0.5em 0.5em 0.5em 1em;
+         position: relative;
+         left:-0.9em;
+         font-weight: 700;
+         
+    }
+
+    #saudacao-user{
+        text-shadow: none;
+        bold:900;
+        color: black;
+        
+       max-width: 290px;
+       text-align: center;
+
+        
+
+    }
+
+    #id-user{
+        color: black;
+        text-shadow: none;
+        bold:900;
+        display: inline;
+       
+
+    }
+
+    #data-hora{
+        color:black;
+        text-shadow: none;
+        
+       max-width: 290px;
+        text-align: center;
+        height: 1.5em;
+    }
+
+    #id-notificacoes{
+        position: relative;
+        top:0.5em;
+    }
+
+   .qtde-leads{
+        display: inline;
+        color: black;
+        font-size: 1.2em;
+        position: relative;
+        top:0.1em;
+        left:0.2em;
+        font-weight: 700;
+        text-shadow: none;
+    }
+
+    #leads-abertos-icon{
+        position: relative;
+        left:0em;
+
+    }
+
+    #leads-abertos{
+
+    }
+
+    #leads-novos{
+        
+    }
+
+    #leads-novos-icon{
+        position: relative;
+        left:1em;
+        
+    }
+
+    .text-btn-leads{
+        color:white;
+        font-size: 1.2em;
+        position: relative;
+        top:0.1em;
+    }
+
+   #lupa-search{
+    position: relative;
+    left:9em;
+    top:-1em;
+    font-size: 1.8em;
+   }
+
+
+   #menu-deslizante{
+        border-left:1px solid white;
+        border-right:1px solid white;
+        border-bottom:1px solid white;
+
+        background: rgba(255, 255, 255, 0.2);
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+
+        padding: 1em;
+        width: 285px;
+        position: relative;
+        top:-1em;
+        display: none;
+
+   }
+
+   #btn-menu-deslizante{
+        
+        padding: 3em;
+        position: relative;
+        left:0em;
+        top:-1em;
+        max-height: 400px;
+   }
+
+   .btn{
+        min-width: 245px;
+        margin: 0.1em 0.1em 0.5em 0.1em;
+        text-align: center;
+        text-shadow: none;
+        font-weight: 800;
+        position: relative;
+        left:-3em;
+        top:-3em;
+        padding:1em;
+   }
+
+   #div-barra-pesquisa{
+        /*border:1px solid red;*/
+        position: relative;
+        left:-9.5em;
+        min-width: 315px;
+        display: none;
+   }
+
+   #form-pesquisa{
+     min-width: 320px;
+     max-height:50px;
+   }
+
+   #barra-pesquisa{
+        position: relative;
+        left:0;
+        width:316px;
+   }
+
+   #btn-pesquisar{
+        font-size: 1em;
+        text-shadow: none;
+        color:black;
+        position: relative;
+        left: 9em;
+        top:-1.5em;
+   }
+
+   #caixa-leads{
+        background: ghostwhite;
+        border:1px solid black;
+        border-radius: 10px;
+        min-width: 317px;
+        position: relative;
+        left:-1em;
+        overflow-x: auto;
+        max-height: 400px;
+
+   }
+
+   #head-line-caixa-leads{
+        color: black;
+        font-size: 1.8em;
+        text-align: center;
+       
+        max-width: 310px;
+        position: relative;
+        left:0.1em;
+   }
+
+   .leads{
+        background:thistle;
+        height: 2.5em;
+        border: 1px solid black;
+        border-radius: 10px;
+        max-width: 310px;
+        position: relative;
+        left:0.2em;
+        margin-bottom: 0.5em;
+   }
+
+   .leads:hover{
+
+            transform: scale(1.03);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+   }
+
+   .envelope-leads{
+        position: relative;
+        left: 0.1em;
+        color:yellow;
+        font-size: 2em;
+   }
+
+   .info-leads{
+        font-size: 0.7em;
+        white-space: nowrap;
+        position: relative;
+        left: 0.5em;
+        top: 0.7em;
+        color:black;
+        text-shadow: none;
+        font-weight: 700;
+        line-height:-1em;
+   }
+
+   #text-info-leads{
+        position: relative;
+        top: -0.2em;
+   }
+
+   #paginator{
+        min-width: 320px;
+        position: relative;
+        left:-1em;
+   }
+
+   #nav-paginator{
+       
+        
+   }
+
+   .pagination{
+     position: relative;
+        left:0em;
+        
+        border:1px solid black;
+   }
+
+   #rodape{
+    position: relative;
+    left:-1em;
+    min-width: 320px;
+    color:black;
+    text-shadow: none;
+    text-align: center;
+
+   }
+
+   .fa-whatsapp{
+        background:  #25d366;
+        border-radius:100%;
+        color:white;
+   }
+
+}
+
+
+/* Celulares Moto G*/
+@media (min-width: 321px) and (max-width:  360.97px) {
+     body{
+        
+      
+        margin: 0 ;
+        padding: 0;
+         
+         overflow-x: hidden;
+          font-family:Noto Sans, sans-serif;
+         color:#ffd700;
+         text-shadow: 0.1em 0.1em 0.2em black;
+        height: 700px;
+        background: orangered;
+        
+        
+
+    }
+
+    html{
+         overflow-x: hidden;
+
+    }
+
+    .container-fluid{
+         
+         max-width: 360px;
+
+         
+
+
+    }
+
+    #header{
+        width:410px;
+        background: #0E0816; 
+        position: relative;
+        left:-2.2em;
+    }
+
+    #img-logo{
+        max-width:230px;
+        position: relative;
+        left:1.5em;
+        /*border:1px solid white;*/
+        
+
+    }
+
+    #menu-hamburguer{
+        font-size: 3.1em;
+        position: relative;
+        left:1.5em;
+        top:0.2em;
+    }
+
+    #header-dashboard{
+        
+         /*border:1px solid red;*/
+         min-width: 360px;
+         max-height: 7em;
+         padding: 0.5em 0.5em 0.5em 1em;
+         position: relative;
+         left:-0.9em;
+         font-weight: 700;
+         
+    }
+
+    #saudacao-user{
+        text-shadow: none;
+        bold:900;
+        color: black;
+       max-width: 290px;
+       text-align: center;
+       margin-left: 1.5em;
+
+        
+
+    }
+
+    #id-user{
+        color: black;
+        text-shadow: none;
+        bold:900;
+        display: inline;
+       
+
+    }
+
+    #data-hora{
+        color:black;
+        text-shadow: none;
+        
+       max-width: 290px;
+        text-align: center;
+        height: 1.5em;
+        margin-left: 1.5em;
+    }
+
+    #id-notificacoes{
+        position: relative;
+        top:0.5em;
+    }
+
+   .qtde-leads{
+        display: inline;
+        color: black;
+        font-size: 1.2em;
+        position: relative;
+        top:0.1em;
+        left:0.2em;
+        font-weight: 700;
+        text-shadow: none;
+    }
+
+    #leads-abertos-icon{
+        position: relative;
+        left:1em;
+
+    }
+
+    #leads-abertos{
+
+    }
+
+    #leads-novos{
+        
+    }
+
+    #leads-novos-icon{
+        position: relative;
+        left:2.5em;
+        
+    }
+
+    .text-btn-leads{
+        color:white;
+        font-size: 1.2em;
+        position: relative;
+        top:0.1em;
+    }
+
+   #lupa-search{
+    position: relative;
+    left:10em;
+    top:-1em;
+    font-size: 1.8em;
+   }
+
+
+   #menu-deslizante{
+        border-left:1px solid white;
+        border-right:1px solid white;
+        border-bottom:1px solid white;
+
+        background: rgba(255, 255, 255, 0.2);
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+
+        padding: 1em;
+        max-width: 280px;
+        position: relative;
+        top:-1em;
+        left: 1.5em;
+        display: none;
+
+   }
+
+   #btn-menu-deslizante{
+        
+        padding: 3em;
+        position: relative;
+        left:0em;
+        top:-1em;
+        max-height: 400px;
+   }
+
+   .btn{
+        min-width: 245px;
+        margin: 0.1em 0.1em 0.5em 0.1em;
+        text-align: center;
+        text-shadow: none;
+        font-weight: 800;
+        position: relative;
+        left:-3em;
+        top:-3em;
+        padding:1em;
+   }
+
+   #div-barra-pesquisa{
+        /*border:1px solid red;*/
+        position: relative;
+        left:-9.5em;
+        min-width: 315px;
+        display: none;
+   }
+
+   #form-pesquisa{
+     min-width: 360px;
+     max-height:50px;
+   }
+
+   #barra-pesquisa{
+        position: relative;
+        left:-1em;
+        top:0.1em;
+        
+        max-width: 355px;
+   }
+
+   #btn-pesquisar{
+        font-size: 1em;
+        text-shadow: none;
+        color:black;
+        position: relative;
+        left: 9.3em;
+        top:-1.5em;
+   }
+
+   #caixa-leads{
+        background: ghostwhite;
+        border:1px solid black;
+        border-radius: 10px;
+        min-width: 360px;
+        position: relative;
+        left:-1em;
+        overflow-x: auto;
+        max-height: 400px;
+
+   }
+
+   #head-line-caixa-leads{
+        color: black;
+        font-size: 1.8em;
+        text-align: center;
+        
+        max-width: 310px;
+        position: relative;
+        left:1em;
+        
+   }
+
+   .leads{
+        background:thistle;
+        height: 2.5em;
+        border: 1px solid black;
+        border-radius: 10px;
+        max-width: 350px;
+        position: relative;
+        left:0.2em;
+        margin-bottom: 0.5em;
+   }
+
+   .leads:hover{
+
+            transform: scale(1.03);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+   }
+
+   .envelope-leads{
+        position: relative;
+        left: 0.1em;
+        color:yellow;
+        font-size: 2em;
+        margin-right: 0.2em;
+   }
+
+   .info-leads{
+        font-size: 0.7em;
+        white-space: nowrap;
+        position: relative;
+        left: 1.5em;
+        top: 0.6em;
+        color:black;
+        text-shadow: none;
+        font-weight: 700;
+        line-height:-1em;
+   }
+
+   #text-info-leads{
+        position: relative;
+        top: -0.5em;
+        left:0.5em;
+   }
+
+   #paginator{
+        min-width: 360px;
+        position: relative;
+        left:-1em;
+   }
+
+   #nav-paginator{
+       
+        
+   }
+
+   .pagination{
+     position: relative;
+        left:1em;
+        
+        border:1px solid black;
+        max-width: 320px;
+   }
+
+   #rodape{
+    position: relative;
+    left:-1em;
+    min-width: 360px;
+    color:black;
+    text-shadow: none;
+    text-align: center;
+
+   }
+
+   .fa-whatsapp{
+        background:  #25d366;
+        border-radius:100%;
+        color:white;
+   }
+
+}
+
+@media (min-width: 361px) and (max-width:  375.97px) {
+         body{
+        
+      
+        margin: 0 ;
+        padding: 0;
+         
+         overflow-x: hidden;
+          font-family:Noto Sans, sans-serif;
+         color:#ffd700;
+         text-shadow: 0.1em 0.1em 0.2em black;
+        height: 700px;
+        background: orangered;
+        
+        
+
+    }
+
+    html{
+         overflow-x: hidden;
+
+    }
+
+    .container-fluid{
+         
+         max-width: 375px;
+
+         
+
+
+    }
+
+    #header{
+        width:410px;
+        background: #0E0816; 
+        position: relative;
+        left:-2.2em;
+    }
+
+    #img-logo{
+        max-width:230px;
+        position: relative;
+        left:1.5em;
+        /*border:1px solid white;*/
+        
+
+    }
+
+    #menu-hamburguer{
+        font-size: 3.1em;
+        position: relative;
+        left:1.5em;
+        top:0.2em;
+    }
+
+    #header-dashboard{
+        
+         /*border:1px solid red;*/
+         min-width: 375px;
+         max-height: 7em;
+         padding: 0.5em 0.5em 0.5em 1em;
+         position: relative;
+         left:-0.9em;
+         font-weight: 700;
+         
+    }
+
+    #saudacao-user{
+        text-shadow: none;
+        bold:900;
+        color: black;
+       max-width: 290px;
+       text-align: center;
+       margin-left: 1.5em;
+
+        
+
+    }
+
+    #id-user{
+        color: black;
+        text-shadow: none;
+        bold:900;
+        display: inline;
+       
+
+    }
+
+    #data-hora{
+        color:black;
+        text-shadow: none;
+        
+       max-width: 290px;
+        text-align: center;
+        height: 1.5em;
+        margin-left: 1.5em;
+    }
+
+    #id-notificacoes{
+        position: relative;
+        top:0.5em;
+    }
+
+   .qtde-leads{
+        display: inline;
+        color: black;
+        font-size: 1.2em;
+        position: relative;
+        top:0.1em;
+        left:0.2em;
+        font-weight: 700;
+        text-shadow: none;
+    }
+
+    #leads-abertos-icon{
+        position: relative;
+        left:1em;
+
+    }
+
+    #leads-abertos{
+
+    }
+
+    #leads-novos{
+        
+    }
+
+    #leads-novos-icon{
+        position: relative;
+        left:2.5em;
+        
+    }
+
+    .text-btn-leads{
+        color:white;
+        font-size: 1.2em;
+        position: relative;
+        top:0.1em;
+    }
+
+   #lupa-search{
+    position: relative;
+    left:10em;
+    top:-1em;
+    font-size: 1.8em;
+   }
+
+
+   #menu-deslizante{
+        border-left:1px solid white;
+        border-right:1px solid white;
+        border-bottom:1px solid white;
+
+        background: rgba(255, 255, 255, 0.2);
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+
+        padding: 1em;
+        max-width: 280px;
+        position: relative;
+        top:-1em;
+        left: 1.5em;
+        display: none;
+
+   }
+
+   #btn-menu-deslizante{
+        
+        padding: 3em;
+        position: relative;
+        left:0em;
+        top:-1em;
+        max-height: 400px;
+   }
+
+   .btn{
+        min-width: 245px;
+        margin: 0.1em 0.1em 0.5em 0.1em;
+        text-align: center;
+        text-shadow: none;
+        font-weight: 800;
+        position: relative;
+        left:-3em;
+        top:-3em;
+        padding:1em;
+   }
+
+   #div-barra-pesquisa{
+        /*border:1px solid red;*/
+        position: relative;
+        left:-9.5em;
+        min-width: 315px;
+        display: none;
+   }
+
+   #form-pesquisa{
+     min-width: 360px;
+     max-height:50px;
+   }
+
+   #barra-pesquisa{
+        position: relative;
+        left:-1em;
+        top:0.1em;
+        
+        max-width: 355px;
+   }
+
+   #btn-pesquisar{
+        font-size: 1em;
+        text-shadow: none;
+        color:black;
+        position: relative;
+        left: 9.3em;
+        top:-1.5em;
+   }
+
+   #caixa-leads{
+        background: ghostwhite;
+        border:1px solid black;
+        border-radius: 10px;
+        min-width: 375px;
+        position: relative;
+        left:-1em;
+        overflow-x: auto;
+        max-height: 400px;
+
+   }
+
+   #head-line-caixa-leads{
+        color: black;
+        font-size: 1.8em;
+        text-align: center;
+        
+        max-width: 310px;
+        position: relative;
+        left:1em;
+        
+   }
+
+   .leads{
+        background:thistle;
+        height: 2.5em;
+        border: 1px solid black;
+        border-radius: 10px;
+        max-width: 350px;
+        position: relative;
+        left:0.5em;
+        margin-bottom: 0.5em;
+   }
+
+   .leads:hover{
+
+            transform: scale(1.03);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+   }
+
+   .envelope-leads{
+        position: relative;
+        left: 0.1em;
+        color:yellow;
+        font-size: 2em;
+        margin-right: 0.2em;
+   }
+
+   .info-leads{
+        font-size: 0.7em;
+        white-space: nowrap;
+        position: relative;
+        left: 1.5em;
+        top: 0.6em;
+        color:black;
+        text-shadow: none;
+        font-weight: 700;
+        line-height:-1em;
+   }
+
+   #text-info-leads{
+        position: relative;
+        top: -0.5em;
+        left:0.5em;
+   }
+
+   #paginator{
+        min-width: 375px;
+        position: relative;
+        left:-1em;
+   }
+
+   #nav-paginator{
+       
+        
+   }
+
+   .pagination{
+     position: relative;
+        left:0.1em;
+        
+        border:1px solid black;
+        max-width: 375px;
+   }
+
+   .page-link{
+        font-size: 1.3em;
+   }
+
+   #rodape{
+    position: relative;
+    left:-1em;
+    min-width: 375px;
+    color:black;
+    text-shadow: none;
+    text-align: center;
+
+   }
+
+   .fa-whatsapp{
+        background:  #25d366;
+        border-radius:100%;
+        color:white;
+   }
+}
+
+@media (min-width: 376px) and (max-width:  414.98px) {
+            body{
+        
+      
+        margin: 0 ;
+        padding: 0;
+         
+         overflow-x: hidden;
+          font-family:Noto Sans, sans-serif;
+         color:#ffd700;
+         text-shadow: 0.1em 0.1em 0.2em black;
+        min-height: 800px;
+        background: orangered;
+        
+        
+
+    }
+
+    html{
+         overflow-x: hidden;
+
+    }
+
+    .container-fluid{
+         
+         min-width: 400px;
+
+         
+
+
+    }
+
+    #header{
+        min-width:450px;
+        background: #0E0816; 
+        position: relative;
+        left:-2.2em;
+    }
+
+    #img-logo{
+        max-width:230px;
+        position: relative;
+        left:1.5em;
+        /*border:1px solid white;*/
+        
+
+    }
+
+    #menu-hamburguer{
+        font-size: 3.1em;
+        position: relative;
+        left:2.8em;
+        top:0.2em;
+    }
+
+    #header-dashboard{
+        
+         /*border:1px solid red;*/
+         min-width: 414px;
+         max-height: 7em;
+         padding: 0.5em 0.5em 0.5em 1em;
+         position: relative;
+         left:-0.9em;
+         font-weight: 700;
+         
+    }
+
+    #saudacao-user{
+        text-shadow: none;
+        bold:900;
+        color: black;
+       max-width: 290px;
+       text-align: center;
+       margin-left: 3em;
+
+        
+
+    }
+
+    #id-user{
+        color: black;
+        text-shadow: none;
+        bold:900;
+        display: inline;
+       
+
+    }
+
+    #data-hora{
+        color:black;
+        text-shadow: none;
+        
+       max-width: 290px;
+        text-align: center;
+        height: 1.5em;
+        margin-left: 3em;
+    }
+
+    #id-notificacoes{
+        position: relative;
+        top:0.5em;
+    }
+
+   .qtde-leads{
+        display: inline;
+        color: black;
+        font-size: 1.2em;
+        position: relative;
+        top:0.1em;
+        left:0.2em;
+        font-weight: 700;
+        text-shadow: none;
+    }
+
+    #leads-abertos-icon{
+        position: relative;
+        left:0em;
+
+    }
+
+    #leads-abertos{
+
+    }
+
+    #leads-novos{
+        
+    }
+
+    #leads-novos-icon{
+        position: relative;
+        left:3em;
+        
+    }
+
+    .text-btn-leads{
+        color:white;
+        font-size: 1.2em;
+        position: relative;
+        top:0.1em;
+    }
+
+   #lupa-search{
+    position: relative;
+    left:12em;
+    top:-1em;
+    font-size: 1.8em;
+   }
+
+
+   #menu-deslizante{
+        border-left:1px solid white;
+        border-right:1px solid white;
+        border-bottom:1px solid white;
+
+        background: rgba(255, 255, 255, 0.2);
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+
+        padding: 1em;
+        max-width: 300px;
+        position: relative;
+        top:-1em;
+        left: 2.5em;
+        display: none;
+
+   }
+
+   #btn-menu-deslizante{
+        
+        padding: 3em;
+        position: relative;
+        left:0em;
+        top:-1em;
+        max-height: 410px;
+   }
+
+   .btn{
+        min-width: 250px;
+        margin: 0.1em 0.1em 0.5em 0.1em;
+        text-align: center;
+        text-shadow: none;
+        font-weight: 800;
+        position: relative;
+        left:-3em;
+        top:-3em;
+        padding:1em;
+   }
+
+   #div-barra-pesquisa{
+        /*border:1px solid red;*/
+        position: relative;
+        left:-9.5em;
+        min-width: 315px;
+        display: none;
+   }
+
+   #form-pesquisa{
+     min-width: 360px;
+     max-height:50px;
+   }
+
+   #barra-pesquisa{
+        position: relative;
+        left:-1em;
+        top:0.1em;
+        
+        max-width: 355px;
+   }
+
+   #btn-pesquisar{
+        font-size: 1em;
+        text-shadow: none;
+        color:black;
+        position: relative;
+        left: 9.3em;
+        top:-1.5em;
+   }
+
+   #caixa-leads{
+        background: ghostwhite;
+        border:1px solid black;
+        border-radius: 10px;
+        min-width: 414px;
+        position: relative;
+        left:-1em;
+        overflow-x: auto;
+        max-height: 400px;
+
+   }
+
+   #head-line-caixa-leads{
+        color: black;
+        font-size: 1.8em;
+        text-align: center;
+        
+        max-width: 310px;
+        position: relative;
+        left:1em;
+        
+   }
+
+   .leads{
+        background:thistle;
+        height: 2.5em;
+        border: 1px solid black;
+        border-radius: 10px;
+        max-width: 395px;
+        position: relative;
+        left:0.5em;
+        margin-bottom: 0.5em;
+   }
+
+   .leads:hover{
+
+            transform: scale(1.09);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+   }
+
+   .envelope-leads{
+        position: relative;
+        left: 0.1em;
+        color:yellow;
+        font-size: 2em;
+        margin-right: 0.2em;
+   }
+
+   .info-leads{
+        font-size: 0.75em;
+        white-space: nowrap;
+        position: relative;
+        left: 1em;
+        top: 0.6em;
+        color:black;
+        text-shadow: none;
+        font-weight: 800;
+        line-height:-1em;
+   }
+
+   #text-info-leads{
+        position: relative;
+        top: -0.5em;
+        left:0.5em;
+   }
+
+   #paginator{
+        max-width: 414px;
+        position: relative;
+        left:-1em;
+   }
+
+   #nav-paginator{
+       
+        
+   }
+
+   .pagination{
+    
+        
+        border:1px solid black;
+        min-width: 414px;
+   }
+
+   .page-link{
+        font-size: 1.4em;
+   }
+
+   #rodape{
+    position: relative;
+    left:-1em;
+    top:0.2em;
+    min-width: 414px;
+    color:black;
+    text-shadow: none;
+    text-align: center;
+
+   }
+
+   .fa-whatsapp{
+        background:  #25d366;
+        border-radius:100%;
+        color:white;
+   }
+}

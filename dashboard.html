@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Antherus - Dashboard</title>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Antherus</title>
+
+
+	<!-- Jquery CDN -->
+	 <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+	
+	<!-- Boostrap 4 CDN  -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+	<!-- FontAwesome CDN -->
+	<script src="https://kit.fontawesome.com/a69cec9c91.js" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="fontawesome/css/all.css">
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+
+
+
+	<!-- CSS -->
+	 <link rel="stylesheet" type="text/css" href="estilo-dashboard.css">
+
+ 	<!-- Java Script -->
+ 	
+
+ 	<script language=javascript type="text/javascript">
+
+ 			$(document).ready(function() {
+
+
+
+ 				//MANIPULANDO O BOTAO MENU HAMBURGUER
+ 				$(document).on('click','.menu-hamburguer-closed', function(){
+
+ 					//Abre o menu deslizante
+ 					$('#menu-deslizante').show();
+
+ 					//Retira a class que indentifica que o menu está fechado
+ 					$('#menu-hamburguer').removeClass('menu-hamburguer-closed')
+
+ 					//Acrescenta a class que indentifica que o menu está aberto
+ 					$('#menu-hamburguer').addClass('menu-hamburguer-open')
+ 				})
+
+ 				//MANIPULANDO O BOTAO MENU-HAMBURGUER ABERTO
+ 				$(document).on('click','.menu-hamburguer-open', function(){
+ 					//Abre o menu deslizante
+ 					$('#menu-deslizante').hide();
+
+ 					//Retira a class que indentifica que o menu está fechado
+ 					$('#menu-hamburguer').removeClass('menu-hamburguer-open')
+
+ 					//Acrescenta a class que indentifica que o menu está aberto
+ 					$('#menu-hamburguer').addClass('menu-hamburguer-closed')
+ 				})
+
+ 				//MANIPULANDO O BOTAO DE PESQUISA  PARA ABRIR A BARRA DE PESQUISA 
+ 				$(document).on('click','#lupa-search', function(){
+ 					//Abre a barra de pesquisa
+ 					$('#div-barra-pesquisa').show()
+
+ 					//Retira a class que mostra que a barra de pesquisa está fechada
+ 					$('#lupa-search').removeClass('search-bar-closed');
+
+ 					//Acrescenta a class que mostra que a barra de pesquisa está aberta
+ 					$('#lupa-search').addClass('search-bar-open');
+ 				});
+
+ 				//MANIPULANDO O BOTAO PESQUISA PARA FECHAR A BARRA DE PESQUISA 
+ 				$(document).on('click','.search-bar-open', function(){
+ 					//Abre a barra de pesquisa
+ 					$('#div-barra-pesquisa').hide()
+
+ 					//Retira a class que mostra que a barra de pesquisa está fechada
+ 					$('#lupa-search').removeClass('search-bar-open');
+
+ 					//Acrescenta a class que mostra que a barra de pesquisa está aberta
+ 					$('#lupa-search').addClass('search-bar-closed');
+ 				});
+
+ 				
+
+
+
+
+ 			})
+
+
+
+
+
+		dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+		monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "agosto", "outubro", "novembro", "dezembro")
+		now = new Date
+	</script>
+
+
+</head>
+<body>
+	<!-- Container -->
+	<div class="container-fluid ">
+		<!-- Header da Pagina -->
+		<header id="header">
+			<!-- Imagem da Logo -->
+			<img src="logo-2.png" id="img-logo">
+			<!-- BTN MENU HAMBURGUER -->
+			<i class="fa fa-bars menu-hamburguer-closed" id="menu-hamburguer" aria-hidden="true"></i>
+		</header>
+		<!--DASHBOARD -->
+		<div id="dashboard-area">
+			<!--HEADER DASHBOARD -->
+			<div id="header-dashboard" class="bg-warning">
+				<!--Identificação ao usuário -->
+				<div id="saudacao-user" class="text-center">Olá:<p id="id-user">12323444123333567890123412345</p></div>
+				<script type="text/javascript">
+					var tamanho = $('#saudacao-user').text();
+					//alert(tamanho.length)
+				</script>
+				<!--Data e Hora -->
+				<div id="data-hora">
+					<script language=javascript type="text/javascript">
+					document.write ("<p> Hoje é " + dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear () + ". </p>")
+					</script>
+				</div>
+				<!-- Notificações de Leads -->
+				<div id="id-notificacoes">
+
+					<!-- Notificação de Leads Abertos -->
+						<span id="leads-abertos-icon" >
+							<i class="fa fa-envelope-open " id="leads-abertos" aria-hidden="true"><p class="qtde-leads">10</p></i>
+							<span class="text-btn-leads">Abertos</span>
+						</span>
+
+
+						<!-- Notificação de Leads Novos Recebido -->
+						<span id="leads-novos-icon" >
+							<i class="fa fa-envelope " aria-hidden="true"><p class="qtde-leads">50</p></i>
+							<span class="text-btn-leads">Novos</span>
+						</span>
+				</div>
+				<!--Lupa Search /Campo de Pesquisa -->
+				<div id="lupa-search">
+					<i class="fa fa-search search-bar-closed" id="lupa-icon"></i>
+					<!--Barra de Pesquisa -->
+					<div id="div-barra-pesquisa">
+						<form method="GET" class="bg-warning" id="form-pesquisa">
+							<input type="text" name="barra-pesquisa" id="barra-pesquisa" class="barra-pesquisa-closed" placeholder="Pesquisar">
+							<span id="btn-pesquisar" class=" btn-sm btn-primary ">Ok</span>
+						</form>
+						
+						
+					</div>
+				</div>
+
+				<!-- Menu Deslizante -->
+				<nav id="menu-deslizante">
+					<!-- BTN DO MENU DESLIZANTE -->
+					<div id="btn-menu-deslizante">
+						<!--BTN TODOS OS LEADS -->
+						<div id="btn-todos-leads" class="btn btn-warning">TODOS OS LEADS</div>
+
+						<!-- BTN LEADS NOVOS -->
+						<div id="btn-leads-novos" class="btn btn-warning" >LEADS NOVOS</div>
+
+						<!-- BTN LEADS ABERTOS -->
+						<div id="btn-leads-abertos" class="btn btn-warning">LEADS ABERTOS</div>
+
+						<!-- BTN LEADS FECHADOS -->
+						<div id="btn-leads-fechados" class="btn btn-warning">LEADS FECHADOS </div>
+
+						<!-- BTN LANDINGPAGES -->
+						<div id="btn-painel-landingpage" class="btn btn-warning">LANDINGPAGES</div>
+
+						<!-- BTN PERFIL -->
+						<div id="btn-perfil" class="btn btn-warning">PERFIL</div>
+
+					</div>
+				</nav>
+
+				<!-- Caixa de Leads -->
+				<div id="caixa-leads">
+						<!-- Header do Caixa Leads -->
+						<h5 id="head-line-caixa-leads">Todos os Leads</h5>
+
+						<!-- Display Leads -->
+						<div id="display-leads">
+
+							<!-- Leads -->
+							<div class="leads">
+								<!-- Informações do Remetente e Data recebimento -->
+								<span class="info-leads">
+									<!--Icone de envelope -->
+									<i class="fa fa-envelope envelope-leads"  aria-hidden="true"></i>
+									<span id="text-info-">
+										<span class="">Remetente:Cliente tal e tal</span>
+										<span>Recebido em:26/01/2023<span>
+										
+									</span>
+									
+								</span>
+							</div>
+							<!--Final Leads -->
+
+							<!-- Leads -->
+							<div class="leads">
+								<!-- Informações do Remetente e Data recebimento -->
+								<span class="info-leads">
+									<!--Icone de envelope -->
+									<i class="fa fa-envelope envelope-leads"  aria-hidden="true"></i>
+									<span id="text-info-">
+										<span class="">Remetente:Cliente tal e tal</span>
+										<span>Recebido em:26/01/2023<span>
+										
+									</span>
+									
+								</span>
+							</div>
+							<!--Final Leads -->
+
+							<!-- Leads -->
+							<div class="leads">
+								<!-- Informações do Remetente e Data recebimento -->
+								<span class="info-leads">
+									<!--Icone de envelope -->
+									<i class="fa fa-envelope envelope-leads"  aria-hidden="true"></i>
+									<span id="text-info-">
+										<span class="">Remetente:Cliente tal e tal</span>
+										<span>Recebido em:26/01/2023<span>
+										
+									</span>
+									
+								</span>
+							</div>
+							<!--Final Leads -->
+
+							<!-- Leads -->
+							<div class="leads">
+								<!-- Informações do Remetente e Data recebimento -->
+								<span class="info-leads">
+									<!--Icone de envelope -->
+									<i class="fa fa-envelope envelope-leads"  aria-hidden="true"></i>
+									<span id="text-info-">
+										<span class="">Remetente:Cliente tal e tal</span>
+										<span>Recebido em:26/01/2023<span>
+										
+									</span>
+									
+								</span>
+							</div>
+							<!--Final Leads -->
+
+							<!-- Leads -->
+							<div class="leads">
+								<!-- Informações do Remetente e Data recebimento -->
+								<span class="info-leads">
+									<!--Icone de envelope -->
+									<i class="fa fa-envelope envelope-leads"  aria-hidden="true"></i>
+									<span id="text-info-">
+										<span class="">Remetente:Cliente tal e tal</span>
+										<span>Recebido em:26/01/2023<span>
+										
+									</span>
+									
+								</span>
+							</div>
+							<!--Final Leads -->
+
+							<!-- Leads -->
+							<div class="leads">
+								<!-- Informações do Remetente e Data recebimento -->
+								<span class="info-leads">
+									<!--Icone de envelope -->
+									<i class="fa fa-envelope envelope-leads"  aria-hidden="true"></i>
+									<span id="text-info-">
+										<span class="">Remetente:Cliente tal e tal</span>
+										<span>Recebido em:26/01/2023<span>
+										
+									</span>
+									
+								</span>
+							</div>
+							<!--Final Leads -->
+
+							<!-- Leads -->
+							<div class="leads">
+								<!-- Informações do Remetente e Data recebimento -->
+								<span class="info-leads">
+									<!--Icone de envelope -->
+									<i class="fa fa-envelope envelope-leads"  aria-hidden="true"></i>
+									<span id="text-info-">
+										<span class="ml-1">Remetente:Cliente tal e tal</span>
+										<span>Recebido em:26/01/2023<span>
+										
+									</span>
+									
+								</span>
+							</div>
+							<!--Final Leads -->
+
+							<!-- Leads -->
+							<div class="leads">
+								<!-- Informações do Remetente e Data recebimento -->
+								<span class="info-leads">
+									<!--Icone de envelope -->
+									<i class="fa fa-envelope envelope-leads"  aria-hidden="true"></i>
+									<span id="text-info-">
+										<span class="">Remetente:Cliente tal e tal</span>
+										<span>Recebido em:26/01/2023<span>
+										
+									</span>
+									
+								</span>
+							</div>
+							<!--Final Leads -->
+
+							<!-- Leads -->
+							<div class="leads">
+								<!-- Informações do Remetente e Data recebimento -->
+								<span class="info-leads">
+									<!--Icone de envelope -->
+									<i class="fa fa-envelope envelope-leads"  aria-hidden="true"></i>
+									<span id="text-info-">
+										<span class="">Remetente:Cliente tal e tal</span>
+										<span>Recebido em:26/01/2023<span>
+										
+									</span>
+									
+								</span>
+							</div>
+							<!--Final Leads -->
+
+							<!-- Leads -->
+							<div class="leads">
+								<!-- Informações do Remetente e Data recebimento -->
+								<span class="info-leads">
+									<!--Icone de envelope -->
+									<i class="fa fa-envelope envelope-leads"  aria-hidden="true"></i>
+									<span id="text-info-">
+										<span class="">Remetente:Cliente tal e tal</span>
+										<span>Recebido em:26/01/2023<span>
+										
+									</span>
+									
+								</span>
+							</div>
+							<!--Final Leads -->
+
+							<!-- Leads -->
+							<div class="leads">
+								<!-- Informações do Remetente e Data recebimento -->
+								<span class="info-leads">
+									<!--Icone de envelope -->
+									<i class="fa fa-envelope envelope-leads"  aria-hidden="true"></i>
+									<span id="text-info-">
+										<span class="">Remetente:Cliente tal e tal</span>
+										<span>Recebido em:26/01/2023<span>
+										
+									</span>
+									
+								</span>
+							</div>
+							<!--Final Leads -->
+
+							<!-- Leads -->
+							<div class="leads">
+								<!-- Informações do Remetente e Data recebimento -->
+								<span class="info-leads">
+									<!--Icone de envelope -->
+									<i class="fa fa-envelope envelope-leads"  aria-hidden="true"></i>
+									<span id="text-info-">
+										<span class="">Remetente:Cliente tal e tal</span>
+										<span>Recebido em:26/01/2023<span>
+										
+									</span>
+									
+								</span>
+							</div>
+							<!--Final Leads -->
+
+							<!-- Leads -->
+							<div class="leads">
+								<!-- Informações do Remetente e Data recebimento -->
+								<span class="info-leads">
+									<!--Icone de envelope -->
+									<i class="fa fa-envelope envelope-leads"  aria-hidden="true"></i>
+									<span id="text-info-leads">
+										<span class="">Remetente:Cliente tal e tal</span>
+										<span>Recebido em:26/01/2023<span>
+										
+									</span>
+									
+								</span>
+							</div>
+							<!--Final Leads -->
+
+						</div>
+						<!--Final Display Leads -->
+
+				</div>
+
+				<!-- Paginator -->
+				<div id="paginator" class="bg-warning">
+					<!-- paginator -->
+						<nav aria-label="Page navigation example" id="nav-paginator" >
+						  <ul class="pagination ">
+						    <li class="page-item"><a class="page-link" href="#">Anterior</a></li>
+						    <li class="page-item"><a class="page-link" href="#">1</a></li>
+						    <li class="page-item"><a class="page-link" href="#">2</a></li>
+						    <li class="page-item"><a class="page-link" href="#">3</a></li>
+						    <li class="page-item"><a class="page-link" href="#">4</a></li>
+						    <li class="page-item"><a class="page-link" href="#">5</a></li>
+						    <li class="page-item"><a class="page-link" href="#">Próximo</a></li>
+						  </ul>
+						</nav>
+				</div>
+
+				<!--Rodapé -->
+				<div class="bg-warning " id="rodape">
+					<footer  >
+						<i class="fa fa-copyright" aria-hidden="true">Copyright</i>
+						<div>Antherus - Desenvolvimento Web</div>
+						<small><i class="fa fa-whatsapp mr-1" aria-hidden="true"></i><span>(16) 99337-9492</span></small>
+					</footer>
+					
+				</div>
+				
+
+				
+
+
+				
+			</div>
+		</div>
+	</div>
+
+
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
