@@ -42,15 +42,17 @@
 
 	  			
 
- 				var checkTermos = document.getElementById('switch');
+ 				
 			  	$(document).on('click','#switch', function(){
-			  		
+			  		var checkTermos = document.getElementById('switch');
 			  		if(checkTermos.checked){
-			  			
 			  			$('#container-fluid').css({'background':'black','color':'white'});
-			  			$('#menu-deslizante').css({'background':'#363636','color':'white'});
+						$('#menu-deslizante').css({'background':'#363636','color':'white'});
 			  			$('#dashboard-area').css({'background':'black','color':'white'});
+			  			$('#leads-board').css({'background':'black','color':'white'});
 			  			$('.btn-menu').css({'background':'#363636','color':'white'});
+			  			$('.leads').css({'background':'black','color':'white'});
+
 			  			$('.btn-menu').hover(
 			  				function(){
 			  					$(this).css({'background':'#708090'})
@@ -58,21 +60,25 @@
 			  					$(this).css({'background':'#363636'})
 			  				}
 			  			);
-			  			$('.leads').css({'background':'black','color':'white'});
-
+			  			
+			  			
 			  		}else{
-			  			$('#container-fluid').css({'background':'white','color':'black'});
-			  			$('#menu-deslizante').css({'background':'white','color':'black'});
-			  			$('dashboard-area').css({'background':'white','color':'black'});
-			  			$('.btn-menu').css({'background':'white','color':'black'});
+			  			
+			  			$('#container-fluid').css({'background':'initial','color':'initial'});
+						$('#menu-deslizante').css({'background':'white','color':'initial'});
+			  			$('#dashboard-area').css({'background':'initial','color':'initial'});
+			  			$('#leads-board').css({'background':'initial','color':'initial'});
+			  			$('.btn-menu').css({'background':'initial','color':'initial'});
+			  			$('.leads').css({'background':'initial','color':'initial'});
+
 			  			$('.btn-menu').hover(
 			  				function(){
 			  					$(this).css({'background':'#708090'})
 			  				}, function(){
-			  					$(this).css({'background':'white'})
+			  					$(this).css({'background':'#363636'})
 			  				}
 			  			);
-			  			$('.leads').css({'background':'black','color':'white'});
+			  			
 			  		}
 			  	});
  				
