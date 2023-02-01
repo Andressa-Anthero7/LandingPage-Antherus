@@ -142,7 +142,11 @@
         visibility: hidden;
         }
 
-        label {
+        #form-atendimento,label {
+            
+        }
+
+        #label {
             cursor: pointer;
             text-indent: 0px;
             width: 100px;
@@ -249,10 +253,6 @@
         
         max-width: 300px;
         
-    }
-
-    .modal,#form-atendimento{
-        display: none;
     }
 
 
