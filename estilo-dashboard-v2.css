@@ -248,7 +248,7 @@
     .modal{
         min-width: 320px;
         position: relative;
-        left:-1em;
+        left:0em;
         border:1px solid red;
         padding: 0;
     }
