@@ -246,14 +246,16 @@
 
 
     .modal{
-        min-width: 700px;
+        min-width: 320px;
     }
 
     .modal,.text-msg-leads{
         
-        max-width: 300px;
+        
         
     }
+
+    
 
 
 
