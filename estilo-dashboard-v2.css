@@ -232,12 +232,37 @@
         margin: 0.3em;
         border:1px solid gray;
         border-radius: 5%;
+
     }
 
     #leads:hover{
         transform: scale(1.03);
             box-shadow: 0 5px 15px rgba(0,0,0,0.6);
     }
+
+
+    .modal{
+        min-width: 700px;
+    }
+
+    .modal,.text-msg-leads{
+        
+        max-width: 300px;
+        
+    }
+
+    .modal,#form-atendimento{
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
 
     .leads-novo{
         color: green;

@@ -40,6 +40,23 @@
 	  				}
 	  			);
 
+	  			/*dISPLAY DE ATENDIMENTOS */
+	  			$('#display-atendimentos').css({'overflow-y':'scroll','max-height':'100px'})
+
+	  			/*BTN FORM ATENDIMENTO */
+	  			$('#form-atendimento').hide();
+	  			$(document).on('click','#btn-cadastrar-atendimento', function(){
+	  				$('#form-atendimento').show();
+	  				$('#btn-cadastrar-atendimento').addClass('form-atendimento-aberto')
+	  				
+	  			})
+
+	  			$(document).on('click','.form-atendimento-aberto', function(){
+	  				$('#form-atendimento').hide();
+	  				$('#btn-cadastrar-atendimento').removeClass('form-atendimento-aberto')
+	  				
+	  			})
+
 	  			
 
  				
@@ -97,10 +114,13 @@
 	  				}
 	  			);
 
-	  			/*BTN DO LEADS ESTADO CLICK */
+	  			/*BTN DO LEADS ESTADO CLICK 
 	  			$(document).on('click','.leads', function(){
 	  				alert('abriu o leads')
-	  			});
+	  			});*/
+
+
+
 
 
  			})
@@ -177,8 +197,8 @@
 							</div>
 							<!-- BTNS DO MENU -->
 							<div id="menu" class="mt-3">
-								<!-- BTN -->
-								<div class="btn  btn-menu " id="todos-leads">
+								<!-- BTN LEADS -->
+								<div class="btn  btn-menu " id="todos-leads" >
 									<i class="fa fa-envelope-open ml-3" ></i>
 									<span class="text-btn-menu">Todos Leads</span>
 									<span class="qtde-leads-btn-menu">100000</span>
@@ -254,7 +274,7 @@
 
 
 				<!--Leads -->
-				<div class="leads">
+				<div class="leads" data-toggle="modal" data-target="#leadsModal" >
 					<div id="envelope"><i class="fa fa-envelope envelope-leads leads-novo"  aria-hidden="true"></i></div>
 					<div id="remetente">Andressa</div>
 					<div id="data-horario">30/01/2023 12:00</div>
@@ -262,82 +282,69 @@
 
 					
 				</div>
-
 				<!--Final do Leads -->
 
-				<!--Leads -->
-				<div class="leads">
-					<div id="envelope"><i class="fa fa-envelope envelope-leads leads-aberto"  aria-hidden="true"></i></div>
-					<div id="remetente">Andressa</div>
-					<div id="data-horario">30/01/2023 12:00</div>
-					<div id="previa-texto-leads">Olá esto enviando uma mensagem........</div>
+				<!-- Modal -->
+				<div class="modal fade" id="leadsModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Leads - Id 1</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				        <div class="mb-1">Remetente: Andressa Cristina Anthero</div>
+				         <div class="mb-1">Recebido em: 30/01/2023 12:00</div>
+				         <div class="mb-1">Email: andressa@andressa.com.br</div>
+				         <div class="mb-1">Whatsapp:(16)99337-9492</div>
+				         <!-- Formulario de Atendimento-->
+				         <div class="my-2" >
+				         	<div id="display-atendimentos" class="border border-dark rounded p-2">
+				         		<h6>Atendimentos Realizados</h6>
+				         		<div class="">Não há atendimentos</div>
+				         		
+				         	</div>
+				         	<form id="form-atendimento" class="border border-dark rounded mt-1 p-1">
+				         		<div class="form-group">
+				         			<h6 id="id-atendimento" class="bolder ml-1">Atendimento - #1</h6>
+				         			<label for="data-atendimento " class="ml-1 font-weight-bold">Data Atendimento</label>
+				         			
+				         			<input type="text"  class="form-control" id="data-atendimento" disabled="disabled" >
+				         			<!--Data e Hora Atendimento-->
+									<div id="data-hora-atendimento" hidden class="text-center">
+										<script language=javascript type="text/javascript">
+										document.write ("<p>" + dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear () + ". </p>")
+										</script>
+									</div>
+				         			<script type="text/javascript">
+				         				
+				         				dataAtendimento = $('#data-hora-atendimento p').text();
+				         				$('#data-atendimento').val(dataAtendimento.toUpperCase());
+				         				
+				         			</script>
+								    <label class="ml-1 font-weight-bold" for="">Descrição do Atendimento</label>
+								    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Descreva o atendimento, o produto que você ofereceu, a reação e dúvidas do cliente.">
+								    <small id="emailHelp" class="form-text text-muted ml-2">Após atender o leads, anote o resultado do atendimento</small>
+								</div>
+				         	</form>
+				         </div>
 
+
+
+				         <!-- Cadastrar Atendimento -->
+				         <div class="btn btn-outline-primary my-2" id="btn-cadastrar-atendimento"><i class="fa fa-plus mr-1"></i>Add Atendimento</div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-success mx-5" data-dismiss="modal"><i class="fa fa-whatsapp"></i> WhatsApp</button>
+				        <button type="button" class="btn btn-primary mx-5">Salvar</button>
+				      </div>
+				    </div>
+				  </div>
 				</div>
+
 				
-				<!--Final do Leads -->
-
-				<!--Leads -->
-				<div class="leads">
-					<div id="envelope"><i class="fa fa-envelope envelope-leads"  aria-hidden="true"></i></div>
-					<div id="remetente">Andressa</div>
-					<div id="data-horario">30/01/2023 12:00</div>
-					<div id="previa-texto-leads">Olá esto enviando uma mensagem........</div>
-				</div>
-				<!--Final do Leads -->
-
-				<!--Leads -->
-				<div class="leads">
-					<div id="envelope"><i class="fa fa-envelope envelope-leads"  aria-hidden="true"></i></div>
-					<div id="remetente">Andressa</div>
-					<div id="data-horario">30/01/2023 12:00</div>
-					<div id="previa-texto-leads">Olá esto enviando uma mensagem........</div>
-				</div>
-				<!--Final do Leads -->
-
-				<!--Leads -->
-				<div class="leads">
-					<div id="envelope"><i class="fa fa-envelope envelope-leads"  aria-hidden="true"></i></div>
-					<div id="remetente">Andressa</div>
-					<div id="data-horario">30/01/2023 12:00</div>
-					<div id="previa-texto-leads">Olá esto enviando uma mensagem........</div>
-				</div>
-				<!--Final do Leads -->
-
-				<!--Leads -->
-				<div class="leads">
-					<div id="envelope"><i class="fa fa-envelope envelope-leads"  aria-hidden="true"></i></div>
-					<div id="remetente">Andressa</div>
-					<div id="data-horario">30/01/2023 12:00</div>
-					<div id="previa-texto-leads">Olá esto enviando uma mensagem........</div>
-				</div>
-				<!--Final do Leads -->
-
-				<!--Leads -->
-				<div class="leads">
-					<div id="envelope"><i class="fa fa-envelope envelope-leads"  aria-hidden="true"></i></div>
-					<div id="remetente">Andressa</div>
-					<div id="data-horario">30/01/2023 12:00</div>
-					<div id="previa-texto-leads">Olá esto enviando uma mensagem........</div>
-				</div>
-				<!--Final do Leads -->
-
-				<!--Leads -->
-				<div class="leads">
-					<div id="envelope"><i class="fa fa-envelope envelope-leads"  aria-hidden="true"></i></div>
-					<div id="remetente">Andressa</div>
-					<div id="data-horario">30/01/2023 12:00</div>
-					<div id="previa-texto-leads">Olá esto enviando uma mensagem........</div>
-				</div>
-				<!--Final do Leads -->
-
-				<!--Leads -->
-				<div class="leads">
-					<div id="envelope"><i class="fa fa-envelope envelope-leads"  aria-hidden="true"></i></div>
-					<div id="remetente">Andressa</div>
-					<div id="data-horario">30/01/2023 12:00</div>
-					<div id="previa-texto-leads">Olá esto enviando uma mensagem........</div>
-				</div>
-				<!--Final do Leads -->
+				
 			</div>
 
 			<footer class="text-center mt-5 mb-1" >
