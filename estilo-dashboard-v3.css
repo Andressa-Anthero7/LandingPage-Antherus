@@ -1,0 +1,375 @@
+
+*{
+	 margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ 
+/* Celulares até 5,5 Polegadas Tamanho G */
+@media (min-width: 376px) and (max-width:  414.98px) { 
+	body{
+		
+	  
+	    margin: 0 ;
+	    padding: 0;
+		 
+		 overflow-x: hidden;
+		  font-family:Noto Sans, sans-serif;
+		 
+		
+		 
+		 background: lavender;
+		
+		min-height: 900px;
+		
+
+	}
+
+	html{
+		 overflow-x: hidden;
+
+	}
+
+	.container-fluid{
+		 
+		 width: 400px;
+
+	}
+
+	#header{
+		width:425px;
+		background: #0E0816;
+		position: relative;
+		left:-1.5em;
+	}
+
+	#img-logo{
+		max-width:300px;
+		max-height: 70px;
+		position: relative;
+		left:6em;
+	}
+
+	#data-hora-header{
+		min-width: 425px;
+		position: relative;
+		left:-1em;
+		font-size: 1.5em;
+		font-weight: 600;
+		
+	}
+
+
+	#navegacao{
+		width: 425px;
+		position: relative;
+		left:-1.5em;
+	}
+
+
+	#pesquisa{
+        
+         max-height: 70px;
+         
+    }
+
+    #barra-pesquisa{
+        max-width: 415px;
+        padding-left:2em;
+        position: relative;
+        left:0;
+        top:-2em;
+
+        min-height: 50px;
+         z-index: 0;
+         font-size: 2em;
+
+    }
+    .form-control{
+        border:1px solid black;
+    }
+
+    #menu-hamburguer{
+        position: relative;
+        top: 0em;
+        left: 0em;
+        font-size: 3em;
+        z-index: 1;
+    }
+
+    #btn-pesquisar{
+        display: none;
+    }
+
+    #menu-deslizante{
+        position: relative;
+        top:1em;
+        z-index: 1;
+        background: white;
+        border:1px solid black;
+    }
+
+    #header-menu-deslizante{
+    	font-weight: 800;
+    	white-space: nowrap;
+    }
+
+    #nome-perfil{
+    	font-weight: 800;
+    	white-space: nowrap;
+    	font-size: 1.5em;
+    }
+
+    #img-perfil-user{
+        border:1px solid gray;
+        border-radius: 100%;
+    }
+
+    #editar-perfil{
+    	font-weight: 800;
+    	white-space: nowrap;
+    	font-size: 1.5em;
+    }
+
+
+
+
+
+
+
+
+    #menu{
+        padding-top:1em;
+        padding-bottom:1em;
+    }
+
+    .btn-menu{
+        min-width: 310px;
+       
+        position: relative;
+        left: -1em;
+        line-height: 2em;
+        border-radius: 0px 40px 40px 0px;
+        text-align: left;
+        padding-left: 1em;
+        font-weight: 700;
+        font-size: 1.5em;
+       
+
+    }
+
+    .text-btn-menu{
+        position: relative;
+        left:1em;
+    }
+
+    .qtde-leads-btn-menu{
+        position: relative;
+        left:1em;
+    }
+
+    
+    #switch-dark-mode{
+    	
+    	position: relative;
+    	left:8em;
+    }
+
+    #btn-mode-dark{
+    	position: relative;
+    	left: 0em;
+    	top:0.3em;
+    	font-size: 2em;
+    	color:white;
+    }
+
+     input[type=checkbox]{
+        height: 0;
+        width: 0;
+        visibility: hidden;
+    }
+
+
+    #dashboard-area{
+        border:1px solid black;
+        border-radius:1%;
+        width: 400px;
+        
+        position: relative;
+        top: 1em;
+        left: -1em;
+    }
+
+    #leads-board{
+    	overflow-x: scroll;
+    	max-height: 500px;
+    }
+
+    #header-leads-board{
+        font-weight: 800;
+    }
+
+    #sub-header-leads-board{
+        font-weight: 700;
+    }
+
+    #display-leads{
+         overflow-x: auto;
+    }
+
+    .leads{
+        background: white;
+        max-width: 410px;
+        max-height: 70px;
+        position: relative;
+        left: 0em;
+        margin: 0.3em;
+        border:1px solid gray;
+        border-radius: 5%;
+
+
+    }
+
+    #leads:hover{
+        transform: scale(1.03);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+    }
+
+
+    .modal{
+        min-width: 320px;
+        height: 3000px;
+        position: fixed;
+        top:0em;
+        left:0em;
+        
+        padding: 0;
+        background: white;
+        font-weight: 700;
+        overflow: scroll;
+    }
+
+    .modal-title{
+    	background: yellow;
+    	border-radius:5% ;
+    	white-space: nowrap;
+    	min-height: 20px;
+    	font-weight: 800;
+    }
+
+    .modal-body{
+        position: relative;
+        top:-1.5em;
+        z-index: 1;
+    }
+
+    #header-atendimento-realizados{
+    	background: yellow;
+    	border-top-left-radius:5% ;
+    	border-top-right-radius:5% ;
+    	max-width: 210px;
+    	white-space: nowrap;
+    	min-height: 20px;
+
+    }
+
+    #display-atendimentos{
+    	overflow: scroll;
+    	height: 150px;
+    	width: 360px;
+    	white-space: normal;
+    	font-weight: 800;
+    	border:1px solid gray;
+    	border-radius: 2%;
+    	position: relative;
+    	top:-0.5em;
+    }
+
+    #descricao-atendimento{
+    	overflow: scroll;
+    	white-space: normal;
+    	height: 90px;
+    	width: 360px;
+    	font-size: 1.3em;
+    }
+
+   
+
+
+
+
+
+
+
+
+
+
+    .leads-novo{
+        color: green;
+    }
+
+    .leads-aberto{
+        color: blue;
+    }
+
+    #envelope{
+        position: relative;
+        top:0.5em;
+        left: 0.5em;
+        border-radius: 5%;
+    }
+
+    #remetente{
+      
+       max-width: 180px;
+       
+       position: relative;
+       top:-1em;
+       left:1.6em;
+       padding-left: 0.3em;
+       font-size: 1em;
+       white-space: nowrap;
+       font-weight: 700;
+
+    }
+
+    #data-horario{
+       
+       max-width: 140px;
+       
+       position: relative;
+       top:-2.5em;
+       left:15em;
+       padding-left: 0.3em;
+       font-size: 1em;
+       white-space: nowrap;
+       font-weight: 700;
+    }
+
+    #previa-texto-leads{
+        max-width: 350px;
+       
+       white-space: nowrap;
+       position: relative;
+       top:-2em;
+       left: 1em;
+       font-weight: 700;
+    }
+
+	
+
+	
+
+	footer{
+		position: relative;
+		left:0em;
+		top:3em;
+		text-align: center;
+		color:black;
+		
+	}
+
+
+}
+
