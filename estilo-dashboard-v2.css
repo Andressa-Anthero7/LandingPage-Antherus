@@ -245,7 +245,19 @@
     }
 
 
-    
+    .modal{
+        min-width: 320px;
+        position: relative;
+        left:-1em;
+    }
+
+    .modal,.text-msg-leads{
+        
+        
+        
+    }
+
+    zz
 
 
 
