@@ -14,7 +14,6 @@
     body{
         overflow-x: hidden;
         font-family:Noto Sans, sans-serif;
-        min-height: 1000px;
 
 
     }
@@ -248,10 +247,13 @@
 
     .modal{
         min-width: 320px;
+        min-height: 680px;
         position: relative;
+        top:-14em;
         left:0em;
         border:1px solid red;
         padding: 0;
+        background: white;
     }
 
     .modal,.text-msg-leads{
