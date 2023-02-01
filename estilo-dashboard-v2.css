@@ -249,6 +249,8 @@
         min-width: 320px;
         position: relative;
         left:-1em;
+        border:1px solid red;
+        padding: 0;
     }
 
     .modal,.text-msg-leads{
