@@ -1,33 +1,9 @@
 $(document).ready(function() {
- 				/*BTN DO MENU  HOVER */
- 				$('.btn-menu').hover(
-	  				function(){
-	  					$(this).css({'background':'gray'})
-	  				}, function(){
-	  					$(this).css({'background':'white'})
-	  				}
-	  			);
-
-	  			/*dISPLAY DE ATENDIMENTOS */
-	  			$('#display-atendimentos').css({'overflow-y':'scroll','max-height':'300px','z-index':'1'})
-
-	  			/*BTN FORM ATENDIMENTO */
-	  			$('#form-atendimento').hide();
-	  			$(document).on('click','#btn-cadastrar-atendimento', function(){
-	  				$('#form-atendimento').show();
-	  				$('#btn-cadastrar-atendimento').addClass('form-atendimento-aberto')
-	  				
-	  			})
-
-	  			$(document).on('click','.form-atendimento-aberto', function(){
-	  				$('#form-atendimento').hide();
-	  				$('#btn-cadastrar-atendimento').removeClass('form-atendimento-aberto')
-	  				
-	  			})
+ 				
 
 	  			
 
- 				
+ 				/* SWITCH DO MOD DARK/LIGHT */
 			  	$(document).on('click','#switch', function(){
 			  		var checkTermos = document.getElementById('switch');
 			  		if(checkTermos.checked){
@@ -35,6 +11,7 @@ $(document).ready(function() {
 			  			$('#menu-deslizante').css({'background':'#363636','color':'white'});
 			  			$('.btn-menu').css({'background':'#363636','color':'white'});
 			  			$('.leads').css({'background':'black','color':'white'});
+
 			  			$('footer').css({'background':'black','color':'white'});
 
 			  			$('.btn-menu').hover(
@@ -52,6 +29,7 @@ $(document).ready(function() {
 			  			$('#menu-deslizante').css({'background':'initial','color':'initial'});
 			  			$('.btn-menu').css({'background':'initial','color':'initial'});
 			  			$('.leads').css({'background':'initial','color':'initial'});
+			  			
 			  			$('footer').css({'background':'initial','color':'initial'});
 
 			  			$('.btn-menu').hover(
@@ -64,12 +42,23 @@ $(document).ready(function() {
 			  			
 			  		}
 			  	});
+
+
+			  	/*BTN DO MENU  HOVER */
+ 				$('.btn-menu').hover(
+	  				function(){
+	  					$(this).css({'background':'gray'})
+	  				}, function(){
+	  					$(this).css({'background':'white'})
+	  				}
+	  			);
+
+	  			
+
  				
  			
 
- 				$(document).on('click','#todos-leads', function(){
- 					alert('tidos os leads')
- 				})
+ 				
 
  				/*BTN DO LEADS  HOVER */
  				$('.leads').hover(
@@ -80,21 +69,58 @@ $(document).ready(function() {
 	  				}
 	  			);
 
-	  			/*BTN DO LEADS ESTADO CLICK 
-	  			$(document).on('click','.leads', function(){
-	  				alert('abriu o leads')
-	  			});*/
+	  		
 
  				/*BTN EDITAR PERFIL */
  				$(document).on('click','#editar-perfil', function(){
  					alert('Editar PErfil')
  				})
 
+ 				/*BTN HISTORICO DE ATENDIMENTO */
+				$('#display-atendimentos').hide();
+	  			$(document).on('click','#btn-mostra-display-atendimento', function(){
+	  				$('#display-atendimentos').show();
+	  				
+	  				$('#btn-mostra-display-atendimento').addClass('aberto')
+	  				
+	  			})
 
- 				/*AREA DE TEXTO DESCRIÇÃO DO ATENDIMENTO */
- 				$(document).on('click','#descricao-atendimento', function(){
- 					$('#display-atendimentos').css({'overflow':'hidden'})
- 				})
+	  			$(document).on('click','.aberto', function(){
+	  				$('#display-atendimentos').hide();
+	  				
+	  				$('#btn-mostra-display-atendimento').removeClass('aberto')
+	  				
+	  			});
+
+
+
+	  			/*BTN CADASTRAR ATENDIMENTO */
+	  			$('#form-atendimento').hide();
+	  			$(document).on('click','#btn-cadastrar-atendimento', function(){
+	  				$('#form-atendimento').show();
+	  				$('#historico-atendimento').hide();
+	  				$('#btn-cadastrar-atendimento').addClass('open')
+	  				
+	  				
+	  			})
+
+
+	  			$(document).on('click','.open', function(){
+	  				$('#form-atendimento').hide();
+	  				$('#historico-atendimento').show();
+	  				$('#btn-cadastrar-atendimento').removeClass('open')
+	  				
+	  				
+	  			})
+
+	  			
+
+
+
+
+ 				
+
+	  			
 
 
 

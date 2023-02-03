@@ -254,7 +254,8 @@
     	min-height: 20px;
     	font-weight: 800;
     	position: relative;
-    	top:1.2em;
+    	top:1em;
+
     }
 
     .modal-body{
@@ -281,6 +282,7 @@
     .text-info-leads{
     	
     	white-space: nowrap;
+    	color: green;
     }
 
     #info-nome{
