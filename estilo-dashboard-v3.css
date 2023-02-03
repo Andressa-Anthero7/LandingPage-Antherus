@@ -221,7 +221,7 @@
     .leads{
         background: white;
         max-width: 410px;
-        max-height: 70px;
+        max-height: 3.5em;
         position: relative;
         left: 0em;
         margin: 0.3em;
@@ -238,24 +238,23 @@
 
 
     .modal{
-        min-width: 320px;
-        height: 3000px;
-        position: fixed;
-        top:0em;
-        left:0em;
-        
-        padding: 0;
-        background: white;
-        font-weight: 700;
-        overflow: scroll;
+       overflow: scroll;
+    }
+
+    .close{
+    	font-size: 4em;
+    	position: relative;
+    	top:-0.3em;
     }
 
     .modal-title{
-    	background: yellow;
+    	
     	border-radius:5% ;
     	white-space: nowrap;
     	min-height: 20px;
     	font-weight: 800;
+    	position: relative;
+    	top:1.2em;
     }
 
     .modal-body{
@@ -264,27 +263,116 @@
         z-index: 1;
     }
 
-    #header-atendimento-realizados{
-    	background: yellow;
-    	border-top-left-radius:5% ;
-    	border-top-right-radius:5% ;
-    	max-width: 210px;
+
+    #info-leads{
+    	border: 1px solid black;
+    	border-radius: 2%;
+    	position: relative;
+    	top:-1em;
+    	font-weight: 700;
+    	font-size: 1.2em;
+    }
+
+     .label-info-leads{
+    	font-size:1.3em ;
+    	font-weight:700 ;
+    }
+
+    .text-info-leads{
+    	
     	white-space: nowrap;
-    	min-height: 20px;
+    }
+
+    #info-nome{
+    	position: relative;
+    	top:0.1em;
+    }
+
+    #campo-remetente{
+    	position: relative;
+    	top:1.5em;
+    }
+
+    .remetente-label{
+    	position: relative;
+    	top:0.5em;
+    }
+
+    #campo-recebido{
+    	position: relative;
+    	top:-3.5em;
+    	left:0em;
+    	
 
     }
+
+    #campo-email{
+    	position: relative;
+    	top:0em;
+    }
+
+    #whatsapp-leads{
+    	position: relative;
+    	left: 0em;
+    }
+
+    .link-whatsapp{
+    	font-size: 1.7em;
+    	color: green;
+    	position: relative;
+    	left: 1em;
+    }
+
+    #iniciar-atendimento{
+    	position: relative;
+    	left:3em;
+    	margin-bottom: 1em;
+    }
+
+
+
+    #historico-atendimento{
+    	position: relative;
+    	top:-1em;
+    	
+    	
+    }
+
+     #btn-cadastrar-atendimento{
+    	font-size: 1.5em;
+    	position: relative;
+    	left:0em;
+    }
+    
+
+
+
+
+
+    #btn-mostra-display-atendimento{
+    	font-size: 1.5em;
+    	position: relative;
+    	left:0em;
+    } 
 
     #display-atendimentos{
     	overflow: scroll;
     	height: 150px;
     	width: 360px;
     	white-space: normal;
-    	font-weight: 800;
+    	font-weight: 700;
     	border:1px solid gray;
     	border-radius: 2%;
     	position: relative;
     	top:-0.5em;
+    	left: 0.1em;
+
     }
+
+
+   
+
+
 
     #descricao-atendimento{
     	overflow: scroll;
@@ -293,6 +381,18 @@
     	width: 360px;
     	font-size: 1.3em;
     }
+
+    #cadastro-help{
+    	font-size: 1em;
+    }
+
+    #btn-salvara-atendimento{
+    	font-size: 2em;
+    	position: relative;
+    	left: 3.5em;
+    }
+
+   
 
    
 
@@ -315,7 +415,7 @@
 
     #envelope{
         position: relative;
-        top:0.5em;
+        top:1em;
         left: 0.5em;
         border-radius: 5%;
     }
@@ -325,7 +425,7 @@
        max-width: 180px;
        
        position: relative;
-       top:-1em;
+       top:-0.5em;
        left:1.6em;
        padding-left: 0.3em;
        font-size: 1em;
@@ -339,7 +439,7 @@
        max-width: 140px;
        
        position: relative;
-       top:-2.5em;
+       top:-2em;
        left:15em;
        padding-left: 0.3em;
        font-size: 1em;
@@ -364,10 +464,10 @@
 	footer{
 		position: relative;
 		left:0em;
-		top:3em;
+		top:5em;
 		text-align: center;
 		color:black;
-		
+
 	}
 
 
