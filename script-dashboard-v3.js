@@ -47,9 +47,12 @@ $(document).ready(function() {
 			  	/*BTN DO MENU  HOVER */
  				$('.btn-menu').hover(
 	  				function(){
-	  					$(this).css({'background':'gray'})
+	  					$(this).css({'background':'gray'});
+	  					$(this).css({'transform': 'initial','box-shadow': '0 5px 15px rgba(0,0,0,0.6)'});
+
 	  				}, function(){
-	  					$(this).css({'background':'white'})
+	  					$(this).css({'background':'white'});
+	  					$(this).css({'transform': 'scale(1.03)','box-shadow': 'none'});
 	  				}
 	  			);
 
@@ -63,9 +66,9 @@ $(document).ready(function() {
  				/*BTN DO LEADS  HOVER */
  				$('.leads').hover(
 	  				function(){
-	  					$(this).css({'transform': 'initial','box-shadow': '0 5px 15px rgba(0,0,0,0.6)'})
+	  					$(this).css({'transform': 'initial','box-shadow': '0 5px 15px rgba(0,0,0,0.6)'});
 	  				}, function(){
-	  					$(this).css({'transform': 'scale(1.03)','box-shadow': 'none'})
+	  					$(this).css({'transform': 'scale(1.03)','box-shadow': 'none'});
 	  				}
 	  			);
 
@@ -86,10 +89,30 @@ $(document).ready(function() {
 
 	  		
 
- 				/*BTN EDITAR PERFIL */
- 				$(document).on('click','#editar-perfil', function(){
- 					alert('Editar PErfil')
- 				})
+ 				
+
+
+ 				/*BTN DO EDITAR PERFIL  HOVER */
+ 				$('#editar-perfil').hover(
+	  				function(){
+	  					$(this).css({'transform': 'initial','box-shadow': '0 5px 15px rgba(0,0,0,0.6)'});
+	  					$('#editar-perfil a').css({'color':'white'});
+	  				}, function(){
+	  					$(this).css({'transform': 'scale(1.03)','box-shadow': 'none'});
+	  					$('#editar-perfil a').css({'color':'#0275d8'});
+	  				}
+	  			);
+
+	  			/*BTN DO EDITAR CONFIGURACAO  HOVER */
+ 				$('#config-perfil').hover(
+	  				function(){
+	  					$(this).css({'transform': 'initial','box-shadow': '0 5px 15px rgba(0,0,0,0.6)'});
+	  					$('#config-perfil a').css({'color':'white'});
+	  				}, function(){
+	  					$(this).css({'transform': 'scale(1.03)','box-shadow': 'none'});
+	  					$('#config-perfil a').css({'color':'#0275d8'});
+	  				}
+	  			);
 
  				/*BTN HISTORICO DE ATENDIMENTO */
 				$('#display-atendimentos').hide();
@@ -150,7 +173,12 @@ $(document).ready(function() {
 		now = new Date
 	
 
-			$('#data-hora-header').html("<p> Hoje é " + dayName[now.getDay() ] + ", " + now.getDate () + " de " + + now.getDate () +  " de "  +     now.getFullYear () + ". </p>");
-			var dataAtedimento = dayName[now.getDay() ] + ", " + now.getDate () + " de " + + now.getDate () +  " de "  +     now.getFullYear ()
-			$('#data-atendimento').val(dataAtedimento.toUpperCase());
+		$('#data-hora-header').html("<span> Hoje é " + dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear () + ". </span>")
+;
+			
 		});
+
+
+
+
+                    
