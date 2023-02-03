@@ -69,6 +69,21 @@ $(document).ready(function() {
 	  				}
 	  			);
 
+
+	  			/*ABRIR LEADS */
+	  			$(document).on('click', '.leads', function(){
+	  				 var formData = new FormData(); // construct our own upload data
+	  				 formData.append('confirma_abertura','leas-aberto');
+			         var request = new XMLHttpRequest();
+			         //request.open("POST", "http://127.0.0.1:8000/dropzone/{{post.id}}/upload/", false); //config your post url here
+			         //request.send(formData);  //send the post request to server
+			         //console.log("Enviou"+  list_of_files[i])
+			         //alert('Agora Leads está aberto')
+			         
+
+	  			});
+
+
 	  		
 
  				/*BTN EDITAR PERFIL */
